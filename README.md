@@ -11,5 +11,6 @@
           label: production
           var_file: env/prod.tfvars
           backend_config_file: env/prod.backend
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
 ```
