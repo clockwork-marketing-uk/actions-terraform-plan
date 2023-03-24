@@ -14,12 +14,17 @@ inputs:
   var_file:
     description: "List of tfvars files"
     required: false
+  github-token:
+    description: "Github token"
+    required: true
 
 runs:
   using: "composite"
   steps:
     - name: Terraform Plan
       uses: dflook/terraform-plan@v1
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
       with:
         path: ${{ inputs.path }}
         label: ${{ inputs.label }}
