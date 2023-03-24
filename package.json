@@ -1,6 +1,6 @@
 {
   "name": "actions-terraform-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Start a terraform plan",
   "repository": {
     "type": "git",
