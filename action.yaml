@@ -1,0 +1,31 @@
+name: Terraform Apply
+description: "Github Action to Run Terraform Apply"
+
+inputs:
+  path:
+    description: "Path of Terraform code"
+    required: true
+  label:
+    description: "A name for the plan"
+    required: false
+  backend_config_file:
+    description: "Backend config file"
+    required: false
+  var_file:
+    description: "List of tfvars files"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Terraform Plan
+      uses: dflook/terraform-plan@v1
+      with:
+        path: ${{ inputs.path }}
+        label: ${{ inputs.label }}
+        backend_config_file: ${{ inputs.backend_config_file }}
+        var_file: ${{ inputs.var_file }}
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "actions-terraform-plan",
+  "version": "1.0.0",
+  "description": "Start a terraform plan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clockwork-marketing-uk/actions-terraform-plan.git"
+  },
+  "author": "Clockwork Marketing <dev@clock-work.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clockwork-marketing-uk/actions-terraform-plan/issues"
+  },
+  "homepage": "https://github.com/clockwork-marketing-uk/actions-terraform-plan#readme",
+  "dependencies": {
+    "extract-changelog-release": "^1.0.2",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "release": "standard-version"
+  }
+}
