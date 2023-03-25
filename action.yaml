@@ -1,5 +1,5 @@
-name: Terraform Apply
-description: "Github Action to Run Terraform Apply"
+name: Terraform Plan
+description: "Github Action to Run Terraform Plan"
 
 inputs:
   path:
